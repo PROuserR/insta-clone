@@ -66,7 +66,7 @@ const Header = () => {
 
   let getUsers = async () => {
     try {
-      let response = await fetch(`http://prouserr.pythonanywhere.com/api/list_users/${localStorage.getItem('my_id')}`);
+      let response = await fetch(`https://prouserr.pythonanywhere.com/api/list_users/${localStorage.getItem('my_id')}`);
       let data = await response.json();
       setUsers(data);
       setUsersCopy(data)

@@ -32,20 +32,20 @@ const Profile = ({ myProfile, user_id }) => {
   let getProfile = async () => {
     if(myProfile)
     {
-      let res2 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
+      let res2 = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
       let data2 = await res2.json();
       setProfile(data2);
       setButtons(<button className="profile_button w-100" onClick={editProfile}>Edit Profile</button>);
     }
     else{
       if(parseInt(user_id) === parseInt(localStorage.getItem('my_id'))){
-        let res2 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
+        let res2 = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
         let data2 = await res2.json();
         setProfile(data2);
         setButtons(<button className="profile_button w-100" onClick={editProfile}>Edit Profile</button>);  
       }
       else{
-        let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${user_id}`);
+        let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${user_id}`);
         let data = await res.json();
         setProfile(data);
         setButtons(<><button className="profile_button w-100">Message</button><button className="profile_button person_check" onClick={followUser}><PersonCheckIcon /></button></>);  
@@ -54,7 +54,7 @@ const Profile = ({ myProfile, user_id }) => {
   };
 
   let logout = async () => {
-    fetch(`http://prouserr.pythonanywhere.com/api/logout_user/`, {
+    fetch(`https://prouserr.pythonanywhere.com/api/logout_user/`, {
       method: 'GET',
       headers: {
         'X-CSRFToken': csrftoken,
@@ -68,7 +68,7 @@ const Profile = ({ myProfile, user_id }) => {
   }
 
   let followUser = async () => {
-    await fetch(`http://prouserr.pythonanywhere.com/api/follow_user/${localStorage.getItem('my_id')}/${user_id}`, {
+    await fetch(`https://prouserr.pythonanywhere.com/api/follow_user/${localStorage.getItem('my_id')}/${user_id}`, {
         method:'POST', 
         headers:{
             'Content-type':'application/json',
@@ -78,7 +78,7 @@ const Profile = ({ myProfile, user_id }) => {
   }
 
   let delete_story = async () => {
-    fetch(`http://prouserr.pythonanywhere.com/api/delete_story/${localStorage.getItem('my_id')}`, {
+    fetch(`https://prouserr.pythonanywhere.com/api/delete_story/${localStorage.getItem('my_id')}`, {
       method: 'DELETE',
       headers: {
         'X-CSRFToken': csrftoken,
@@ -88,7 +88,7 @@ const Profile = ({ myProfile, user_id }) => {
   }
 
   let my_story_existed = async () => {
-    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_my_story/${localStorage.getItem('my_id')}`);
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_my_story/${localStorage.getItem('my_id')}`);
     let data = await res.json();
     if(data.length != 0)
       setDeleteStoryButton(<li><div className="dropdown-item" onClick={delete_story}>Delete Story</div></li>)

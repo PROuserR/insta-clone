@@ -7,7 +7,7 @@ const Activity = ({ profile_image, username, action, influncer_id}) => {
   return (
     <div className='activity'>
         <div className='profile_picture_lg' onClick={() => {navigate(`/user/${influncer_id}`)}}>
-          <img className='profile_picture_img_lg' src={`http://prouserr.pythonanywhere.com/media/${profile_image}`} alt="..." />
+          <img className='profile_picture_img_lg' src={`https://prouserr.pythonanywhere.com/media/${profile_image}`} alt="..." />
         </div>
         <div className='activity_info'>
             <strong>{username}</strong> {action}

@@ -140,7 +140,7 @@ const CreateNewPostPage = () => {
     for (let index = 0; index < files.length; index++) {
       formData.append('images', files[index])
     }
-    await fetch(`http://prouserr.pythonanywhere.com/api/create_post/`, {
+    await fetch(`https://prouserr.pythonanywhere.com/api/create_post/`, {
       method: 'POST',
       headers: {
         'X-CSRFToken': csrftoken,

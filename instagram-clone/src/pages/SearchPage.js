@@ -10,14 +10,14 @@ const SearchPage = () => {
   let filtered_users = [];
 
   let getUsers = async () => {
-    let response = await fetch(`http://prouserr.pythonanywhere.com/api/list_users/${localStorage.getItem('my_id')}`);
+    let response = await fetch(`https://prouserr.pythonanywhere.com/api/list_users/${localStorage.getItem('my_id')}`);
     let data = await response.json();
     setUsers(data);
     setUsersCopy(data)
   };
 
   let getAllPosts = async () => {
-    let res = await fetch(`http://prouserr.pythonanywhere.com/api/discover_posts/`);
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/discover_posts/`);
     let data = await res.json();
     setDiscover(data)
   }
@@ -63,7 +63,7 @@ const SearchPage = () => {
       <div id="discover_grid_container">
         {discover.map((post, index) => (
           <Link to={`/post/${post.id}`} key={index}>
-            <img className="discover_grid" src={`http://prouserr.pythonanywhere.com/media/${post.photoes}`} />
+            <img className="discover_grid" src={`https://prouserr.pythonanywhere.com/media/${post.photoes}`} />
           </Link>
             
         ))}

@@ -5,7 +5,7 @@ const SavedPostsPage = () => {
   const [savedPosts, setSavedPosts] = useState([]);
 
   let getSavedPosts = async () => {
-    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_saved_posts/`);
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_saved_posts/`);
     let data = await res.json();
     setSavedPosts(data);
   }

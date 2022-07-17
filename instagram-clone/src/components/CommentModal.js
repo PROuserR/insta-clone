@@ -32,7 +32,7 @@ const CommentModal = ({ post, comment_modal_id, comment_box_id }) => {
   var csrftoken = getCookie('csrftoken');
 
   let getComments = async () => {
-    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_comments/${post_id}`, {
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_comments/${post_id}`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

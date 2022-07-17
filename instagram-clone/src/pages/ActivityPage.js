@@ -13,7 +13,7 @@ const ActivityPage = () => {
     let hourFlag = true;
     let dayFlag = true;
     let earlierFlag = true;
-    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_activites/${localStorage.getItem('my_id')}`);
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_activites/${localStorage.getItem('my_id')}`);
     let data = await res.json();
     for (let index in data) {
       if (time_delta(data[index].date_added).includes('min')) {

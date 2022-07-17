@@ -67,7 +67,7 @@ const HomePage = () => {
 
   let getPosts = async () => {
     try {
-      let response = await fetch(`http://prouserr.pythonanywhere.com/api/news_feed/${localStorage.getItem('my_id')}`, {
+      let response = await fetch(`https://prouserr.pythonanywhere.com/api/news_feed/${localStorage.getItem('my_id')}`, {
         method: 'GET',
         headers: {
           'X-CSRFToken': csrftoken,

@@ -22,11 +22,11 @@ const SendModal = ({ post_id }) => {
   var csrftoken = getCookie('csrftoken');
 
   let getContacts = async () => {
-    let res_1 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
+    let res_1 = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
     let data_1 = await res_1.json();
     let contactsTemp = [];
     for (let index = 0; index < data_1.following.length; index++) {
-      let res_2 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${data_1.following[index]}`);
+      let res_2 = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${data_1.following[index]}`);
       let data_2 = await res_2.json();
       contactsTemp.push(data_2)
     }
@@ -37,7 +37,7 @@ const SendModal = ({ post_id }) => {
     let checkboxes = document.getElementsByClassName('send_modal_checkbox')
     for (let index = 0; index < checkboxes.length; index++) {
       if (checkboxes[index].checked === true) {
-        await fetch(`http://prouserr.pythonanywhere.com/api/add_message/`, {
+        await fetch(`https://prouserr.pythonanywhere.com/api/add_message/`, {
           method: 'POST',
           headers: {
             'Content-type': 'application/json',

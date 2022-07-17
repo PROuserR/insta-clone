@@ -6,11 +6,11 @@ const ContactsPage = () => {
   const [contacts, setContacts] = useState([]);
 
   let getContacts = async () => {
-    let res_1 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
+    let res_1 = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
     let data_1 = await res_1.json();
     let contactsTemp = [];
     for (let index = 0; index < data_1.following.length; index++) {
-      let res_2 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${data_1.following[index]}`);
+      let res_2 = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${data_1.following[index]}`);
       let data_2 = await res_2.json();
       contactsTemp.push(data_2)
     }

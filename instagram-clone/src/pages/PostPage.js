@@ -23,7 +23,7 @@ const PostPage = () => {
     var csrftoken = getCookie('csrftoken');
 
     let getPost = async () => {
-        let response = await fetch(`http://prouserr.pythonanywhere.com/api/get_post/${post_id}`, {
+        let response = await fetch(`https://prouserr.pythonanywhere.com/api/get_post/${post_id}`, {
             method: 'GET',
             headers: {
                 'X-CSRFToken': csrftoken,

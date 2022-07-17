@@ -31,7 +31,7 @@ const EditProfilePage = () => {
         formDataProfile.append('image', image)
         formDataProfile.append('user', localStorage.getItem('my_id'))
 
-        fetch(`http://prouserr.pythonanywhere.com/api/update_profile/${localStorage.getItem('my_id')}`, {
+        fetch(`https://prouserr.pythonanywhere.com/api/update_profile/${localStorage.getItem('my_id')}`, {
             method:'POST', 
             headers:{
                 'X-CSRFToken':csrftoken,
@@ -39,7 +39,7 @@ const EditProfilePage = () => {
             body:formDataProfile
         })
         
-        fetch(`http://prouserr.pythonanywhere.com/api/update_user/${localStorage.getItem('my_id')}`, {
+        fetch(`https://prouserr.pythonanywhere.com/api/update_user/${localStorage.getItem('my_id')}`, {
             method:'POST', 
             headers:{
                 'Content-type':'application/json',

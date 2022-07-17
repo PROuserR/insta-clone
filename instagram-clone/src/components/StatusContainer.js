@@ -11,19 +11,19 @@ const StatusContainer = () => {
   const navigate = useNavigate();
 
   let getMyProfile = async () => {
-    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
     let data = await res.json();
     setMyProfile(data);
   };
 
   let getUsersStories = async () => {
-    let response = await fetch(`http://prouserr.pythonanywhere.com/api/get_users_stories/${localStorage.getItem('my_id')}`);
+    let response = await fetch(`https://prouserr.pythonanywhere.com/api/get_users_stories/${localStorage.getItem('my_id')}`);
     let data = await response.json();
     setUsersStories(data);
   };
 
   let getMyStory = async () => {
-    let response = await fetch(`http://prouserr.pythonanywhere.com/api/get_my_story/${localStorage.getItem('my_id')}`);
+    let response = await fetch(`https://prouserr.pythonanywhere.com/api/get_my_story/${localStorage.getItem('my_id')}`);
     let data = await response.json();
     setMyStory(data);
     if (data.length === 0)
@@ -102,7 +102,7 @@ const StatusContainer = () => {
                 <button type="button" className="btn-close story_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div id="my_slider">
                   {myStory.map((photo, index) => (
-                    <img src={`http://prouserr.pythonanywhere.com/media/${photo}`} key={index} className="story_item" />
+                    <img src={`https://prouserr.pythonanywhere.com/media/${photo}`} key={index} className="story_item" />
                   ))}
                 </div>
               </div>
@@ -142,7 +142,7 @@ const StatusContainer = () => {
                     <button type="button" className="btn-close story_close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div id="slider">
                       {userStory.story_photoes.map((photo, index) => (
-                        <img src={`http://prouserr.pythonanywhere.com/media/${photo}`} key={index} className="story_item" />
+                        <img src={`https://prouserr.pythonanywhere.com/media/${photo}`} key={index} className="story_item" />
                       ))}
                     </div>
                   </div>

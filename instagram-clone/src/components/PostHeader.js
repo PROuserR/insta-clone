@@ -51,7 +51,7 @@ const PostHeader = ({ post_header }) => {
   }
 
   let unfollowUser = async () => {
-    fetch(`http://prouserr.pythonanywhere.com/api/unfollow_user/${post_header.user_id}`, {
+    fetch(`https://prouserr.pythonanywhere.com/api/unfollow_user/${post_header.user_id}`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -65,7 +65,7 @@ const PostHeader = ({ post_header }) => {
       <div className="post__header_profile">
         <div className="post_header_profile_picture" >
           <img
-            src={`http://prouserr.pythonanywhere.com/media/${post_header.image}`}
+            src={`https://prouserr.pythonanywhere.com/media/${post_header.image}`}
             className="post_header_profile_picture_img"
           />
         </div>
