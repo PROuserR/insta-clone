@@ -1,0 +1,95 @@
+.post_footer{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.icons{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.icon{
+    height: 25px !important;
+    width: 28px !important;
+}
+
+.left_icons{
+    width: 100%;
+    display: flex;
+    margin-left: 2px;
+}
+
+.post_footer_icon{
+  margin-right: 15px;
+  margin-left: 2px;
+}
+
+.heart_icon{
+  width: auto;
+}
+
+.hours_ago{
+    font-size: x-small;
+}
+
+.comment_textbox{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    color: inherit;
+}
+
+.post_button{
+    border: none;
+    background-color: transparent;
+    color: #0095F6;
+    font-weight: 500;
+}
+
+.comment_box{
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.post_toast_container{
+  position: absolute;
+  visibility: hidden;
+}
+
+.send_modal{
+  background: inherit;
+  color: inherit;
+}
+
+.heart_icon:active{
+    transform: scaleY(1.2);
+    transform: scale(1.2);
+}
+
+.emoji_icon{
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .post_toast_container{
+    visibility: hidden;
+  }
+  .post_footer_bookmark_icon{
+    padding-left: 4vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .post_footer{
+    padding-left: 0;
+}
+}

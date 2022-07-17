@@ -1,0 +1,47 @@
+.chatting_page{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.chat_contacts_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #E3E3E3;
+}
+
+.chatting_page_contacts{
+    margin-left: 0 !important;
+    padding-right: 50%;
+}
+
+
+.page_title{
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: 500;
+    text-align: start;
+    font-size: x-large;
+}
+
+@media screen and (max-width:800px) {
+    .chatting_page{
+        display: flex;
+        height: 95vh;
+        margin-bottom: 30px;
+    }
+    .chat_box_container{
+        visibility: hidden;
+        position: absolute;
+        border: none;
+    }
+    .chat_contacts_box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: none;
+    }
+
+}

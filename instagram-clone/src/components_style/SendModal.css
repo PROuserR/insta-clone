@@ -1,0 +1,35 @@
+.btn-close {
+    position: absolute;
+    left: 85%;
+}
+
+.send_modal_body{
+    width: 100%;
+}
+
+.send_modal_username{
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+}
+
+.send_modal_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.send_modal_checkbox{
+    margin-top: 25px;
+}
+
+.send_btn {
+    width: 20vw;
+}
+
+@media screen and (max-width: 600px) {
+    .check_user {
+        margin-left: 50vw;
+    }
+    .send_btn {
+        width: 50vw;
+    }
+}

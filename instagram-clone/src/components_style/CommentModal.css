@@ -1,0 +1,84 @@
+.comment_modal_body {
+  margin-left: 5px !important;
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.comment_container{
+  display: flex;
+  flex-direction: column;
+}
+
+.comment{
+  margin-left: 0 !important;
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.comment_modal_profile_picture{
+  width: 56px;
+  height: 54px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(90deg, coral, purple);
+  border-color: inherit;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.comment_modal_profile_picture_lg{
+  width: 70px;
+  height: 68px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(90deg, coral, purple);
+  border-color: inherit;
+  margin-left: 0 !important;
+  margin-right: 15px !important;
+}
+
+.comment_modal_username{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.comment_modal_content{
+  margin-left: 15px;
+}
+
+.comment_modal_profile_picture_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: inherit;
+}
+
+.comment_modal_arrow_left_icon{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.comment_modal_footer{
+  width: 100%;
+  max-width: 800px;
+  top: unset;
+  bottom: -1px;
+  position: fixed;
+}
+
+.comment_modal_header{
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .comment_modal_body {
+    height: 78vh;
+  }
+}

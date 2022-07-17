@@ -1,0 +1,31 @@
+#login_page{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.login_row{
+    width: 100%;
+    max-width: 500px;
+}
+
+.login_btn{
+    width: 100%;
+}
+
+.loginpage_register{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_link{
+    margin-top: 20px;
+    text-decoration: none;
+    color: blue;
+}

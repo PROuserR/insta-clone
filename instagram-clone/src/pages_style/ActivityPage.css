@@ -1,0 +1,26 @@
+.activity_page{
+    width: 100%;
+    max-width: 500px;
+    padding-left: 10px !important;
+}
+
+.activty_page_header{
+    width: 100%;
+    display: flex;
+    text-align: start;
+}
+
+.activty_page_header_title{
+    margin-bottom: 10px;
+}
+
+.activty_page_body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activty_page_body_period{
+    font-size: larger;
+    font-weight: 500;
+}

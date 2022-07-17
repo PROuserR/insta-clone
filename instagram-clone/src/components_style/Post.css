@@ -1,0 +1,13 @@
+.post{
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 35px;
+    border-color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+    .emoji_icon{
+        visibility: hidden;
+        position: absolute;
+    }
+}

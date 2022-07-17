@@ -1,0 +1,23 @@
+*{
+  border-color: inherit;
+}
+
+div{
+  background-color: inherit !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+#app_body{
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  #app_body{
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,60 @@
+.chat_contact {
+    width: 100%;
+    padding-right: 60%;
+    display: flex;
+}
+
+.chat_box_container {
+    top: 0;
+    width: 96vw;
+    height: 100vh;
+    border: 1px solid #E3E3E3;
+}
+
+
+.contact_row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.contact_info_col {
+    margin-left: 0 !important;
+}
+
+
+.contact_info_row {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+
+.contact_info {
+    color: gray;
+}
+
+.contact_image {
+    height: 68px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.contact_image_sm {
+    height: 50px;
+    width: 52px;
+    border-radius: 50%;
+}
+
+.contact_info_row {
+    margin-top: 5px;
+    display: flex;
+    height: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .chat_contact {
+        padding-right: 10%;
+    }
+  }

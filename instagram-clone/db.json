@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "post_header": {
+        "profile_picture": "https://media.gettyimages.com/photos/may-2022-badenwuerttemberg-villingenschwenningen-the-porsche-logo-on-picture-id1240477852?s=2048x2048",
+        "username": "Porsche"
+      },
+      "post_body": [
+        "https://media.gettyimages.com/photos/visitors-look-at-a-porsche-ag-918-spyder-ehybrid-automobile-produced-picture-id488295718?s=2048x2048",
+        "https://media.gettyimages.com/photos/the-porsche-918-spyder-seen-at-goodwood-festival-of-speed-2015-the-picture-id1023444874?s=2048x2048",
+        "https://media.gettyimages.com/photos/the-2016-porsche-ag-spyder-boxster-vehicle-is-displayed-during-the-picture-id468412470?s=2048x2048"
+      ],
+      "post_footer": {
+        "date": "Tue Jun 07 2022 21:03:40 GMT+0300 (Eastern European Summer Time)",
+        "liking_users": ["liam", "abd", "heather", "mohamad"],
+        "comments": [
+          { "commenter": "Shailene", "content": "Wow!" }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "post_header": {
+        "profile_picture": "https://media.gettyimages.com/photos/the-winter-sun-sets-over-shapwick-heath-a-wetland-reserve-on-february-picture-id138072076?s=2048x2048",
+        "username": "Nature"
+      },
+      "post_body": [
+        "https://media.gettyimages.com/photos/california-poppies-and-canterbury-bells-bloom-after-prolonged-record-picture-id654194728?s=2048x2048",
+        "https://media.gettyimages.com/photos/new-zealand-south-island-te-wahipounamu-fiordland-national-park-picture-id122219485?s=2048x2048",
+        "https://media.gettyimages.com/photos/deer-graze-in-the-early-morning-light-at-the-ashton-court-estate-on-picture-id492337206?s=2048x2048"
+      ],
+      "post_footer": {
+        "date": "Tue Jun 07 2022 15:03:40 GMT+0300 (Eastern European Summer Time)",
+        "liking_users": ["emma", "lara", "maya"],
+        "comments": [
+          { "commenter": "abd", "content": "That is really sick!" },
+          { "commenter": "christine", "content": "Awesome!" },
+          { "commenter": "abd", "content": "Great" }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "post_header": {
+        "profile_picture": "https://media.gettyimages.com/photos/in-the-statue-of-liberty-stands-in-the-foreground-as-lower-manhattan-picture-id600966512?s=2048x2048",
+        "username": "NYC"
+      },
+      "post_body": [
+        "https://media.gettyimages.com/photos/an-aerial-view-of-lower-manhattan-at-dusk-september-8-2016-in-new-picture-id600966434?s=2048x2048",
+        "https://media.gettyimages.com/photos/traffic-and-pedestrians-crowds-times-square-after-the-celebration-of-picture-id3242866?s=2048x2048",
+        "https://media.gettyimages.com/photos/this-computer-generated-rendering-released-by-the-lower-manhattan-picture-id53165639?k=20&m=53165639&s=612x612&w=0&h=oKQTfSUz4uaxxVmUz5Vxr-PfgUcH9Jih-kTtfcK5Uxc="
+      ],
+      "post_footer": {
+        "liking_users": ["lily", "maya"],
+        "date": "Tue Jun 01 2022 11:13:40 GMT+0300 (Eastern European Summer Time)",
+        "comments": [
+          { "commenter": "kathryn", "content": "So good" },
+          { "commenter": "abd", "content": "Great" },
+          { "commenter": "kathryn", "content": "Cool" },
+          { "commenter": "christine", "content": "Awesome!" }
+        ]
+      }
+    }
+  ],
+  "users": [
+    { "name": "Liam", "profile_picture": "https://media.gettyimages.com/photos/liam-payne-visits-the-kiss-fm-studios-on-september-03-2019-in-london-picture-id1175435212?s=2048x2048" },
+    { "name": "Heather", "profile_picture":"https://media.gettyimages.com/photos/in-this-image-released-on-june-5-heather-rae-el-moussa-attends-the-picture-id1401221945?s=2048x2048" },
+    { "name": "Kathryn", "profile_picture":"https://media.gettyimages.com/photos/kathryn-newton-attends-the-27th-annual-critics-choice-awards-at-on-picture-id1384924329?s=2048x2048"},
+    { "name": "Lily", "profile_picture":"https://media.gettyimages.com/photos/lily-collins-attends-the-2019-vanity-fair-oscar-party-hosted-by-at-picture-id1127327789?s=2048x2048"},
+    { "name": "Shailene", "profile_picture":"https://media.gettyimages.com/photos/actress-shailene-woodley-attends-the-christian-dior-couture-ss20-on-picture-id1145919313?s=2048x2048"}
+  ]
+}
