@@ -66,7 +66,7 @@ const Header = () => {
 
   let getUsers = async () => {
     try {
-      let response = await fetch(`http://127.0.0.1:8000/api/list_users/${localStorage.getItem('my_id')}`);
+      let response = await fetch(`http://prouserr.pythonanywhere.com/api/list_users/${localStorage.getItem('my_id')}`);
       let data = await response.json();
       setUsers(data);
       setUsersCopy(data)
@@ -150,7 +150,7 @@ const Header = () => {
                   >
                     <div className="comment_modal_profile_picture_lg" >
                       <img
-                        src={`http://127.0.0.1:8000${user.image}`}
+                        src={`http://prouserr.pythonanywhere.com${user.image}`}
                         className="comment_modal_profile_picture_img"
                       />
                     </div>

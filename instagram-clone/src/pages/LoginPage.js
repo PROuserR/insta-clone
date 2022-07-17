@@ -25,7 +25,7 @@ const LoginPage = () => {
     let username = document.getElementById('username-input').value
     let password = document.getElementById('password-input').value
 
-    let res1 = await fetch(`http://127.0.0.1:8000/api/login_user/`, {
+    let res1 = await fetch(`http://prouserr.pythonanywhere.com/api/login_user/`, {
         method:'POST', 
         headers:{
             'Content-type':'application/json',

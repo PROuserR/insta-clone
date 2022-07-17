@@ -32,7 +32,7 @@ const CommentModal = ({ post, comment_modal_id, comment_box_id }) => {
   var csrftoken = getCookie('csrftoken');
 
   let getComments = async () => {
-    let res = await fetch(`http://127.0.0.1:8000/api/get_comments/${post_id}`, {
+    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_comments/${post_id}`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
@@ -76,7 +76,7 @@ const CommentModal = ({ post, comment_modal_id, comment_box_id }) => {
                     >
                       <div className="comment_modal_profile_picture" >
                         <img
-                          src={`http://127.0.0.1:8000${comment.image}`}
+                          src={`http://prouserr.pythonanywhere.com${comment.image}`}
                           className="comment_modal_profile_picture_img"
                         />
                       </div>

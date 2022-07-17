@@ -11,19 +11,19 @@ const StatusContainer = () => {
   const navigate = useNavigate();
 
   let getMyProfile = async () => {
-    let res = await fetch(`http://127.0.0.1:8000/api/get_profile/${localStorage.getItem('my_id')}`);
+    let res = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
     let data = await res.json();
     setMyProfile(data);
   };
 
   let getUsersStories = async () => {
-    let response = await fetch(`http://127.0.0.1:8000/api/get_users_stories/${localStorage.getItem('my_id')}`);
+    let response = await fetch(`http://prouserr.pythonanywhere.com/api/get_users_stories/${localStorage.getItem('my_id')}`);
     let data = await response.json();
     setUsersStories(data);
   };
 
   let getMyStory = async () => {
-    let response = await fetch(`http://127.0.0.1:8000/api/get_my_story/${localStorage.getItem('my_id')}`);
+    let response = await fetch(`http://prouserr.pythonanywhere.com/api/get_my_story/${localStorage.getItem('my_id')}`);
     let data = await response.json();
     setMyStory(data);
     if (data.length === 0)
@@ -77,7 +77,7 @@ const StatusContainer = () => {
             data-bs-toggle="modal"
             data-bs-target="#myStoryModal">
             <img
-              src={`http://127.0.0.1:8000${myProfile.image}`}
+              src={`http://prouserr.pythonanywhere.com${myProfile.image}`}
               className="profile_picture_img_lg"
             />
             {plusIcon}
@@ -89,7 +89,7 @@ const StatusContainer = () => {
                 <div className="profile_story">
                   <div className="profile_picture_story_container" >
                     <img
-                      src={`http://127.0.0.1:8000${myProfile.image}`}
+                      src={`http://prouserr.pythonanywhere.com${myProfile.image}`}
                       className="profile_picture_story"
                     />
                   </div>
@@ -102,7 +102,7 @@ const StatusContainer = () => {
                 <button type="button" className="btn-close story_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div id="my_slider">
                   {myStory.map((photo, index) => (
-                    <img src={`http://127.0.0.1:8000/media/${photo}`} key={index} className="story_item" />
+                    <img src={`http://prouserr.pythonanywhere.com/media/${photo}`} key={index} className="story_item" />
                   ))}
                 </div>
               </div>
@@ -117,7 +117,7 @@ const StatusContainer = () => {
                 data-bs-target="#exampleModal"
               >
                 <img
-                  src={`http://127.0.0.1:8000${userStory.image}`}
+                  src={`http://prouserr.pythonanywhere.com${userStory.image}`}
                   className="profile_picture_img_lg"
                 />
                 <p className="card_username">{userStory.username}</p>
@@ -129,7 +129,7 @@ const StatusContainer = () => {
                     <div className="profile_story">
                       <div className="profile_picture_story_container" >
                         <img
-                          src={`http://127.0.0.1:8000${userStory.image}`}
+                          src={`http://prouserr.pythonanywhere.com${userStory.image}`}
                           className="profile_picture_story"
                         />
                       </div>
@@ -142,7 +142,7 @@ const StatusContainer = () => {
                     <button type="button" className="btn-close story_close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div id="slider">
                       {userStory.story_photoes.map((photo, index) => (
-                        <img src={`http://127.0.0.1:8000/media/${photo}`} key={index} className="story_item" />
+                        <img src={`http://prouserr.pythonanywhere.com/media/${photo}`} key={index} className="story_item" />
                       ))}
                     </div>
                   </div>

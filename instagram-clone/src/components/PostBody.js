@@ -30,13 +30,13 @@ const PostBody = ({ carousel_id, post_body, heart_id }) => {
       if (index == 0) {
         photoesTemp.push(
           <div className="carousel-item active" key={index}>
-            <img src={`http://127.0.0.1:8000/media/${post_body.photoes[index]}`} className="post_img" alt="..." />
+            <img src={`http://prouserr.pythonanywhere.com/media/${post_body.photoes[index]}`} className="post_img" alt="..." />
           </div>
         );
       } else {
         photoesTemp.push(
           <div className="carousel-item" key={index}>
-            <img src={`http://127.0.0.1:8000/media/${post_body.photoes[index]}`} className="post_img" alt="..." />
+            <img src={`http://prouserr.pythonanywhere.com/media/${post_body.photoes[index]}`} className="post_img" alt="..." />
           </div>
         );
       }
@@ -50,7 +50,7 @@ const PostBody = ({ carousel_id, post_body, heart_id }) => {
 
 
   const toggle_heart = async () => {
-    fetch(`http://127.0.0.1:8000/api/add_like/${post_body.post_id}`, {
+    fetch(`http://prouserr.pythonanywhere.com/api/add_like/${post_body.post_id}`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

@@ -22,11 +22,11 @@ const SendModal = ({ post_id }) => {
   var csrftoken = getCookie('csrftoken');
 
   let getContacts = async () => {
-    let res_1 = await fetch(`http://127.0.0.1:8000/api/get_profile/${localStorage.getItem('my_id')}`);
+    let res_1 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${localStorage.getItem('my_id')}`);
     let data_1 = await res_1.json();
     let contactsTemp = [];
     for (let index = 0; index < data_1.following.length; index++) {
-      let res_2 = await fetch(`http://127.0.0.1:8000/api/get_profile/${data_1.following[index]}`);
+      let res_2 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${data_1.following[index]}`);
       let data_2 = await res_2.json();
       contactsTemp.push(data_2)
     }
@@ -37,7 +37,7 @@ const SendModal = ({ post_id }) => {
     let checkboxes = document.getElementsByClassName('send_modal_checkbox')
     for (let index = 0; index < checkboxes.length; index++) {
       if (checkboxes[index].checked === true) {
-        await fetch(`http://127.0.0.1:8000/api/add_message/`, {
+        await fetch(`http://prouserr.pythonanywhere.com/api/add_message/`, {
           method: 'POST',
           headers: {
             'Content-type': 'application/json',
@@ -91,7 +91,7 @@ const SendModal = ({ post_id }) => {
                 >
                   <div className="comment_modal_profile_picture" >
                     <img
-                      src={`http://127.0.0.1:8000${contact.image}`}
+                      src={`http://prouserr.pythonanywhere.com${contact.image}`}
                       className="comment_modal_profile_picture_img"
                     />
                   </div>

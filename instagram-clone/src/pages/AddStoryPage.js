@@ -138,7 +138,7 @@ const AddStoryPage = () => {
         for (let index = 0; index < files.length; index++) {
             formData.append('images', files[index])
         }
-        await fetch(`http://127.0.0.1:8000/api/add_story/`, {
+        await fetch(`http://prouserr.pythonanywhere.com/api/add_story/`, {
             method: 'POST',
             headers: {
                 'X-CSRFToken': csrftoken,

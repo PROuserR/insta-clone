@@ -27,7 +27,7 @@ const RegisterPage = () => {
         let email = document.getElementById('email-input').value
         let password = document.getElementById('password-input').value
 
-        fetch(`http://127.0.0.1:8000/api/register_user/`, {
+        fetch(`http://prouserr.pythonanywhere.com/api/register_user/`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',

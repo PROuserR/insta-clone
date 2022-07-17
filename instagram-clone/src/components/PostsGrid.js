@@ -8,12 +8,12 @@ const PostsGrid = ({ myPosts, user_id }) => {
 
   let getPosts = async () => {
     if (myPosts) {
-      let res = await fetch(`http://127.0.0.1:8000/api/list_user_posts/${localStorage.getItem('my_id')}`);
+      let res = await fetch(`http://prouserr.pythonanywhere.com/api/list_user_posts/${localStorage.getItem('my_id')}`);
       let data = await res.json();
       setPosts(data)
     }
     else {
-      let res = await fetch(`http://127.0.0.1:8000/api/list_user_posts/${user_id}`);
+      let res = await fetch(`http://prouserr.pythonanywhere.com/api/list_user_posts/${user_id}`);
       let data = await res.json();
       setPosts(data)
     }
@@ -30,7 +30,7 @@ const PostsGrid = ({ myPosts, user_id }) => {
         {posts.map((post, index) => (
             <div key={index} onClick={() => {navigate(`/post/${post.id}`)}}>
               <img
-                src={`http://127.0.0.1:8000/media/${post.photoes}`}
+                src={`http://prouserr.pythonanywhere.com/media/${post.photoes}`}
                 className="grid"
               />
             </div>

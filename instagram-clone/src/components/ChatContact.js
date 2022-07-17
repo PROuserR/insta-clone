@@ -32,7 +32,7 @@ const ChatContact = ({ image, username, sender_id, last_seen }) => {
       <div className="contact_row">
         <div className="contact_image_col">
           <img
-            src={`http://127.0.0.1:8000${image}`}
+            src={`http://prouserr.pythonanywhere.com${image}`}
             className="contact_image"
           />
         </div>

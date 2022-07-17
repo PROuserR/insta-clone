@@ -37,7 +37,7 @@ const ChattingPage = () => {
   var csrftoken = getCookie('csrftoken');
 
   let getMessages = async () => {
-    let res = await fetch(`http://127.0.0.1:8000/api/list_messages/${localStorage.getItem('my_id')}/${sender_id}`)
+    let res = await fetch(`http://prouserr.pythonanywhere.com/api/list_messages/${localStorage.getItem('my_id')}/${sender_id}`)
     let data = await res.json();
     console.log(data)
     let myMessagesTemp = [];
@@ -77,7 +77,7 @@ const ChattingPage = () => {
 
   let send_message = async () => {
     let message = document.getElementById("chat_textbox").value;
-    await fetch(`http://127.0.0.1:8000/api/add_message/`, {
+    await fetch(`http://prouserr.pythonanywhere.com/api/add_message/`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -121,7 +121,7 @@ const ChattingPage = () => {
   };
 
   let send_heart = async () => {
-    await fetch(`http://127.0.0.1:8000/api/add_message/`, {
+    await fetch(`http://prouserr.pythonanywhere.com/api/add_message/`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -134,7 +134,7 @@ const ChattingPage = () => {
   };
 
   let getProfile = async () => {
-    let res2 = await fetch(`http://127.0.0.1:8000/api/get_profile/${sender_id}`);
+    let res2 = await fetch(`http://prouserr.pythonanywhere.com/api/get_profile/${sender_id}`);
     let data2 = await res2.json();
     setProfile(data2);
   }
@@ -149,7 +149,7 @@ const ChattingPage = () => {
                 <ArrowLeftIcon className="icon arrow_left_icon" />
               </div>
               <img
-                src={`http://127.0.0.1:8000${profile.image}`}
+                src={`http://prouserr.pythonanywhere.com${profile.image}`}
                 className="contact_image_sm rounded-circle"
                 alt=" "
               />
