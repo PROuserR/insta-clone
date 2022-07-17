@@ -91,7 +91,7 @@ const SendModal = ({ post_id }) => {
                 >
                   <div className="comment_modal_profile_picture" >
                     <img
-                      src={`http://prouserr.pythonanywhere.com${contact.image}`}
+                      src={`https://prouserr.pythonanywhere.com${contact.image}`}
                       className="comment_modal_profile_picture_img"
                     />
                   </div>

@@ -150,7 +150,7 @@ const Header = () => {
                   >
                     <div className="comment_modal_profile_picture_lg" >
                       <img
-                        src={`http://prouserr.pythonanywhere.com${user.image}`}
+                        src={`https://prouserr.pythonanywhere.com${user.image}`}
                         className="comment_modal_profile_picture_img"
                       />
                     </div>

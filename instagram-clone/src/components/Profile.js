@@ -108,7 +108,7 @@ const Profile = ({ myProfile, user_id }) => {
         <div className="profile_row_flex">
           <img
             className="profile_picture_img"
-            src={`http://prouserr.pythonanywhere.com${profile.image}`}
+            src={`https://prouserr.pythonanywhere.com${profile.image}`}
             alt="..."
           />
           <p className="user_info">

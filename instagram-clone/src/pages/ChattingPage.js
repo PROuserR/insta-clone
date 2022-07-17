@@ -149,7 +149,7 @@ const ChattingPage = () => {
                 <ArrowLeftIcon className="icon arrow_left_icon" />
               </div>
               <img
-                src={`http://prouserr.pythonanywhere.com${profile.image}`}
+                src={`https://prouserr.pythonanywhere.com${profile.image}`}
                 className="contact_image_sm rounded-circle"
                 alt=" "
               />

@@ -76,7 +76,7 @@ const CommentModal = ({ post, comment_modal_id, comment_box_id }) => {
                     >
                       <div className="comment_modal_profile_picture" >
                         <img
-                          src={`http://prouserr.pythonanywhere.com${comment.image}`}
+                          src={`https://prouserr.pythonanywhere.com${comment.image}`}
                           className="comment_modal_profile_picture_img"
                         />
                       </div>

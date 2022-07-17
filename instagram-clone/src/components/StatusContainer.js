@@ -77,7 +77,7 @@ const StatusContainer = () => {
             data-bs-toggle="modal"
             data-bs-target="#myStoryModal">
             <img
-              src={`http://prouserr.pythonanywhere.com${myProfile.image}`}
+              src={`https://prouserr.pythonanywhere.com${myProfile.image}`}
               className="profile_picture_img_lg"
             />
             {plusIcon}
@@ -89,7 +89,7 @@ const StatusContainer = () => {
                 <div className="profile_story">
                   <div className="profile_picture_story_container" >
                     <img
-                      src={`http://prouserr.pythonanywhere.com${myProfile.image}`}
+                      src={`https://prouserr.pythonanywhere.com${myProfile.image}`}
                       className="profile_picture_story"
                     />
                   </div>
@@ -117,7 +117,7 @@ const StatusContainer = () => {
                 data-bs-target="#exampleModal"
               >
                 <img
-                  src={`http://prouserr.pythonanywhere.com${userStory.image}`}
+                  src={`https://prouserr.pythonanywhere.com${userStory.image}`}
                   className="profile_picture_img_lg"
                 />
                 <p className="card_username">{userStory.username}</p>
@@ -129,7 +129,7 @@ const StatusContainer = () => {
                     <div className="profile_story">
                       <div className="profile_picture_story_container" >
                         <img
-                          src={`http://prouserr.pythonanywhere.com${userStory.image}`}
+                          src={`https://prouserr.pythonanywhere.com${userStory.image}`}
                           className="profile_picture_story"
                         />
                       </div>
