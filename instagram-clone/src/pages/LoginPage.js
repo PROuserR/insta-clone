@@ -36,7 +36,7 @@ const LoginPage = () => {
     let data1 = await res1.json();
     console.log(data1['token'])
 
-    let res = await fetch(`http://localhost:8000/api/get_user_id`, {
+    let res = await fetch(`https://prouserr.pythonanywhere.com/api/get_user_id`, {
       method:'GET', 
       headers:{
           'Content-type':'application/json',

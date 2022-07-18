@@ -171,7 +171,7 @@ let PostFooter = ({ post_footer, comment_modal_id, heart_id, comment_box_id, com
   };
 
   const updateLikes = async () => {
-    let res2 = await fetch(`http://localhost:8000/api/get_likers/${post_footer.post_id}`);
+    let res2 = await fetch(`https://prouserr.pythonanywhere.com/api/get_likers/${post_footer.post_id}`);
     let data2 = await res2.json();
     if (data2.length === 0) {
       setLikes(<span>No likes so far :(</span>)
