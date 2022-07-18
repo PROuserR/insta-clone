@@ -1,5 +1,3 @@
-from enum import unique
-import profile
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
@@ -10,7 +8,6 @@ from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
 from .serializers import *
 from .models import *
-import random
 
 # Create your views here.
 @api_view(['POST'])
@@ -186,7 +183,6 @@ def update_password(request):
 @permission_classes([IsAuthenticated])
 def get_user_id(request):
     user = request.user
-    print(user)
     return Response({'my_id': user.id})
 
 
